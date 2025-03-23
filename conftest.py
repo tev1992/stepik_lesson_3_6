@@ -4,7 +4,7 @@ from selenium.webdriver.firefox.options import Options as OptionsFirefox
 import pytest
 
 def pytest_addoption(parser):
-    parser.addoption('--language', action='store', default=None, help='Выбери локализацию тестов: "--language=en" or "--language=ru"')
+    parser.addoption('--language', action='store', default=None, help='Выбери локализацию тестов: "--language"')
     parser.addoption('--browser_name', action='store', default="Chrome", help='Выбери браузер: "--browser_name=chrome" or "--browser_name=firefox"')
 
 @pytest.fixture(scope='function')
